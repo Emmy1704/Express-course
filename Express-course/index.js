@@ -33,7 +33,6 @@ app.get('/videos/:video_id/:video_name', (req, res) => {
   console.log(`request made to ${req.url}`)
   res.send(`video requested with id: ${req.params.video_id} and name: ${req.params.video_name}`);
 })
-
 app.get('/profile/:username/:email/:password', (req, res) => {
   console.log(`request made to ${req.url}`);
   res.send(`welcome ${req.params.username} your email is: ${req.params.email}, and your password is: ${req.params.password}`);
